@@ -1,0 +1,10 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout" 
+		controllerName="projectassessment.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App id="theApp">
+		<!--Only the first page needs to be added, lazy loading implemented  -->
+
+		<mvc:XMLView id="Questions" viewName="projectassessment.view.Questions"></mvc:XMLView>
+		
+	</App>
+</core:View>
+

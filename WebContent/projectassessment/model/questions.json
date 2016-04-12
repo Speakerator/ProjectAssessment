@@ -1,0 +1,27 @@
+{
+	"questions":[
+		{
+		"id":"1",
+		"text":"Can the program or project requirements be clearly defined at this stage?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"2",
+		"text":"Can the program or project scope and objectives be clearly developed?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"3",
+		"text":"Are there only a few quality requirements to which the program or project needs to conform that do not contradict one another?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"4",
+		"text":"Are the program or project or program assumptions and constraints likely to remain stable?",
+		"noSelected":false
+		}
+	]
+}
