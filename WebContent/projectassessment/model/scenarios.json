@@ -4,7 +4,7 @@
 		"id":"1",
 		"headerText":"Requirements",
 		"longText":"The program or project requirements change frequently or cannot be clearly defined due to conflicting information received from various stakeholders.",
-		"applicatbleQuestions":[1,3,4],
+		"applicableQuestions":[1,3,4],
 		"actions":[
 			{"text":"Action 1"},
 			{"text":"Action 2"},
@@ -17,7 +17,7 @@
 		"id":"2",
 		"headerText":"Project Delivery",
 		"longText":"It has become apparent that the program or project is no longer going to deliver what the customer needs.",
-		"applicatbleQuestions":[1,2,3,4],
+		"applicableQuestions":[1,2,3,4],
 		"actions":[
 			{"text":"Action 1"},
 			{"text":"Action 2"},
@@ -30,7 +30,7 @@
 		"id":"3",
 		"headerText":"Interconnectedness",
 		"longText":"The combination of the advanced and technical nature of the program or project has several interconnected components and/or processes that have not been encountered previously by the organization. In addition, team members do not have the necessary skills or experience.",
-		"applicatbleQuestions":[4],
+		"applicableQuestions":[4],
 		"actions":[
 			{"text":"Action 1"},
 			{"text":"Action 2"},

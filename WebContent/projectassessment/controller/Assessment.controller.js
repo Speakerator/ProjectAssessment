@@ -16,20 +16,36 @@ sap.ui.controller("projectassessment.controller.Assessment", {
 	},
 	
 	createContent: function (sId, oContext) {
-var that = this;
-var panel = new sap.m.Panel({width:"100%", expandable:true, expanded:false, });
+		var that = sap.ui.getCore().byId("Assessment").getController();
+		var panel = new sap.m.Panel({width:"100%", expandable:true, expanded:false, });
 		var header = new sap.m.Toolbar();
+		header.addContent(new sap.m.Title({text:oContext.getProperty("headerText"), width:"200px"}));
+		var aApplicableQuestions = oContext.getProperty("applicableQuestions");
+//		var iAbsoluteNegatives = that.getTotalNegatives(aApplicableQuestions);
+		var fRelativeNegatives = that.getRelativeNegatives(aApplicableQuestions);
+		var valueState = that.formatValueState(fRelativeNegatives);
 		var progress = new sap.m.ProgressIndicator({
-			displayValue : {path:"scenarios>/applicableQuestions", formatter: this.getTotalNegatives}, // string
-			percentValue : {path:"scenarios>/applicableQuestions", formatter: this.formatRelativeNegatives}, // float
+			state : valueState,
+			displayValue : fRelativeNegatives + "%",
+			percentValue : fRelativeNegatives,// float
+			height:"30px",
+			width:"40%",
 			showValue : true
 		}, this);
-		header.addContent(new sap.m.Title({text:oContext.getProperty("headerText"), width:"200px"}));
+		header.addContent(new sap.m.ToolbarSpacer());
 		header.addContent(progress);
 		panel.setHeaderToolbar(header);
+		var vLayout = new sap.ui.layout.VerticalLayout({width:"100%"});
+		var oText = new sap.m.Text({text : oContext.getProperty("longText")}).addStyleClass("sapUiMediumMarginBottom");
+		vLayout.addContent(oText);
+		vLayout.addContent(new sap.m.Title({text:"Recommended Actions"}));
+		var aActions = oContext.getProperty("actions");
+		for (var l = 0; l < aActions.length; l++) {
+			var actionText = aActions[l].text;
+			vLayout.addContent(new sap.m.Text({text:actionText}));
+		}
+		panel.addContent(vLayout);
 		
-		
-		//var oTextField = new c.TextField({value:"{path:'gender', formatter:'.myGenderFormatter'} {firstName}, {lastName}"}, oController);
 		
 //		
 //		var rYes = new sap.m.RadioButton({text:"Yes"}).setGroupName(panel.getId());
@@ -53,21 +69,35 @@ var panel = new sap.m.Panel({width:"100%", expandable:true, expanded:false, });
 		var totalNegative = 0;
 		var questions = sap.ui.getCore().getModel().getProperty("/questions");
 		var i = 0;
-		for (var j = 0; j < questions.size; j++) {
-			var questId = questions[x].id;//aus dem Fragebogen;
-			var questAnswer = question[x].noSelected; //mit "Nein" beantwortet
-			var relevQuest = applicableQuestions[i]
-			if(questId ===  relevQuest && questAnswer){
-				totalNegative++;
-				i++;
+		for (var j = 0; j < questions.length; j++) {
+			var questId = questions[j].id;//aus dem Fragebogen;
+			var questAnswer = questions[j].noSelected; //mit "Nein" beantwortet
+			var relevQuest = applicableQuestions[i].toString();
+			if(questId ===  relevQuest){
+				i++;	// id's match, move to next applicable for next round
+				if(questAnswer){ //relevant question was answered "no"
+					totalNegative++
+				}
 			}
 		}
 		return totalNegative;
 	},
 	
-	formatRelativeNegatives : function(applicableQuestions){
-		var relativeNegatives = applicableQuestions.length / this.getTotalNegatives(applicableQuestions)*100;
+	getRelativeNegatives : function(applicableQuestions){
+		var relativeNegatives = Math.round(this.getTotalNegatives(applicableQuestions)/applicableQuestions.length *1000)/10;
 		return relativeNegatives;
+	},
+	
+	formatValueState: function(percent){
+		var valueState = null;
+		if (percent>=60) {
+			valueState = sap.ui.core.ValueState.Error;
+		} else if (percent >= 30) {
+			valueState = sap.ui.core.ValueState.Warning;
+		}else{
+			valueState = sap.ui.core.ValueState.Success;
+		}
+		return valueState;
 	}
 	
 
