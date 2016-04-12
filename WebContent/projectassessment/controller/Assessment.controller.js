@@ -19,7 +19,7 @@ sap.ui.controller("projectassessment.controller.Assessment", {
 		var that = sap.ui.getCore().byId("Assessment").getController();
 		var panel = new sap.m.Panel({width:"100%", expandable:true, expanded:false, });
 		var header = new sap.m.Toolbar();
-		header.addContent(new sap.m.Title({text:oContext.getProperty("headerText"), width:"200px"}));
+		header.addContent(new sap.m.Title({text:oContext.getProperty("id") + ".) " + oContext.getProperty("headerText"), width:"200px"}));
 		var aApplicableQuestions = oContext.getProperty("applicableQuestions");
 //		var iAbsoluteNegatives = that.getTotalNegatives(aApplicableQuestions);
 		var fRelativeNegatives = that.getRelativeNegatives(aApplicableQuestions);
@@ -36,13 +36,14 @@ sap.ui.controller("projectassessment.controller.Assessment", {
 		header.addContent(progress);
 		panel.setHeaderToolbar(header);
 		var vLayout = new sap.ui.layout.VerticalLayout({width:"100%"});
-		var oText = new sap.m.Text({text : oContext.getProperty("longText")}).addStyleClass("sapUiMediumMarginBottom");
+		vLayout.addContent(new sap.m.Title({text:"Complexity Scenario"}).addStyleClass("sapUiTinyMarginBottom"));
+		var oText = new sap.m.Text({text : oContext.getProperty("longText")}).addStyleClass("sapUiSmallMarginBottom");
 		vLayout.addContent(oText);
-		vLayout.addContent(new sap.m.Title({text:"Recommended Actions"}));
+		vLayout.addContent(new sap.m.Title({text:"Recommended Actions"}).addStyleClass("sapUiTinyMarginBottom"));
 		var aActions = oContext.getProperty("actions");
 		for (var l = 0; l < aActions.length; l++) {
 			var actionText = aActions[l].text;
-			vLayout.addContent(new sap.m.Text({text:actionText}));
+			vLayout.addContent(new sap.m.Text({text:"* " + actionText}).addStyleClass("sapUiSmallMarginBottom"));
 		}
 		panel.addContent(vLayout);
 		

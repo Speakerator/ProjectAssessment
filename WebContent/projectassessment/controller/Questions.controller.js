@@ -23,7 +23,7 @@ sap.ui.controller("projectassessment.controller.Questions", {
 		var rNo = new sap.m.RadioButton({text:"No"}).setGroupName(panel.getId());
 		rNo.bindProperty("selected",oContext.sPath + "/noSelected","TwoWay");
 		var hBox = new sap.m.HBox({items:[rYes, rNo]});
-		var sQuestion = new sap.m.Text({text:oContext.getProperty("text")}).addStyleClass("column1");
+		var sQuestion = new sap.m.Text({text:"( " + oContext.getProperty("id") + " ) " + oContext.getProperty("text")}).addStyleClass("column1");
 
 		var fixFlex = new sap.ui.layout.FixFlex({fixFirst:false, vertical:false, minFlexSize:"300px",  fixContent:[hBox], flexContent:[sQuestion]});
 		panel.addContent(fixFlex);

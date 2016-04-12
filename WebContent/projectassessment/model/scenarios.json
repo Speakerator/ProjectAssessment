@@ -6,10 +6,23 @@
 		"longText":"The program or project requirements change frequently or cannot be clearly defined due to conflicting information received from various stakeholders.",
 		"applicableQuestions":[1,2,3,4,5,6,8,12,18,21,22,25,28,29,30,34,35,36,37,38,41,42,43,44,45,46,47],
 		"actions":[
-			{"text":"Action 1"},
-			{"text":"Action 2"},
-			{"text":"Action 3"},
-			{"text":"Action 4"}
+			{"text":"Assign resources to verify the information received and to establish an objective basis for decision making."},
+			{"text":"Balance and negotiate the requirements as stated by customers based on the recommendations from program or project team experts, in order to stabilize requirements."},
+			{"text":"Scrutinize requirement changes for implications (for example, benefits, impact on other requirements) and take immediate steps to adjust the program or project as necessary."},
+			{"text":"Put in place the appropriate program or project organizational structure to facilitate communications."},
+			{"text":"Develop and maintain an online site to share with all key stakeholders to allow for collaboration and tracking of requirements approval."},
+			{"text":"Be aware of small changes in the tone and context of communications among stakeholders to capture early signs of potential issues."},
+			{"text":"Hold workshops involving stakeholder groups to understand and resolve views and opinions regarding requirements."},
+			{"text":"Obtain the explicit commitment of stakeholders to a shared overall strategy for the program or project."},
+			{"text":"Facilitate face-to-face meetings with a social dimension to nurture collaborative behavior and help develop trust toward a collective sensemaking of project goals, risks and uncertainty, and a shared (no-blame) understanding of consequences of scope change."},
+			{"text":"Manage the program or project with success in mind, but always within the boundaries of ethics in the given context and personal sense of accountability and responsibility."},
+			{"text":"Be resourceful conversationally; build collective devotion to the project through various techniques (e.g., storytelling)."},
+			{"text":"Form important personal alliances with key stakeholders."},
+			{"text":"Develop a strong identity as the manager of projects with complexity and become established as an expert in order to gain respect and support from stakeholders."},
+			{"text":"Arrange to meet and discuss the consequences with those accountable for original decisions and reassess risks with them against the agreed KPI (key performance indicators) for the project."},
+			{"text":"Continually engage stakeholders on success criteria as success can change over time. Identify potential biases among stakeholders, understand their motives, and then develop mitigation actions."},
+			{"text":"Identify potential biases among stakeholders, understand their motives, and then develop mitigation actions."},
+			{"text":"Conduct interim lessons learned with stakeholders to pinpoint the causes of why requirements cannot be clearly defined and manage changes to requirements."}			
 			]
 		},
 		
@@ -19,10 +32,18 @@
 		"longText":"It has become apparent that the program or project is no longer going to deliver what the customer needs.",
 		"applicableQuestions":[2,3,4,5,6,9,10,12,19,20,21,22,24,25,28,29,30,33,34,35,36,40,41,42,43,44,45,46,47],
 		"actions":[
-			{"text":"Action 1"},
-			{"text":"Action 2"},
-			{"text":"Action 3"},
-			{"text":"Action 4"}
+			{"text":"Create a prototype or pilot a process or service to understand the potential gaps while consulting and coordinating with subject matter experts."},
+			{"text":"Introduce iterative development techniques when appropriate."},
+			{"text":"Assess whether in-process change activities help or hinder alignment to the customer's needs."},
+			{"text":"Hold value-engineering workshops."},
+			{"text":"Consult and coordinate with team members to generate innovative solutions."},
+			{"text":"Communicate with the customer in person whenever possible."},
+			{"text":"Take quick action to communicate the situation and possible alternative approaches to the customer."},
+			{"text":"Reassess scope and requirements to determine the viable outcomes that can be delivered by the program or project and seek concurrence from the customer that the change in outcomes is acceptable."},
+			{"text":"Reexamine how customer needs relate to the strategic objectives of the organization."},
+			{"text":"Work with the customer to identify the optimum way forward."},
+			{"text":"Assess the viability of the program or project."},
+			{"text":"Conduct interim lessons learned to avoid unnecessary future changes."}			
 			]
 		},
 		
