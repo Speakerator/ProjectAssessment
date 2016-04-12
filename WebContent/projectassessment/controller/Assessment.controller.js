@@ -72,7 +72,11 @@ sap.ui.controller("projectassessment.controller.Assessment", {
 		for (var j = 0; j < questions.length; j++) {
 			var questId = questions[j].id;//aus dem Fragebogen;
 			var questAnswer = questions[j].noSelected; //mit "Nein" beantwortet
-			var relevQuest = applicableQuestions[i].toString();
+			var relevQuest = applicableQuestions[i]
+			if(relevQuest === undefined){
+				break;// avoid overflow
+			}
+			relevQuest = relevQuest.toString();
 			if(questId ===  relevQuest){
 				i++;	// id's match, move to next applicable for next round
 				if(questAnswer){ //relevant question was answered "no"

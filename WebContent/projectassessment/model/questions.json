@@ -22,6 +22,272 @@
 		"id":"4",
 		"text":"Are the program or project or program assumptions and constraints likely to remain stable?",
 		"noSelected":false
+		},
+		
+		{
+		"id":"5",
+		"text":"Are stakeholder requirements unlikely to change frequently?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"6",
+		"text":"Are there a limited number of dependency relationships among the components of the program or project?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"7",
+		"text":"Does the program or project manager have the authority to apply internal or external resources to program or project activities?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"8",
+		"text":"Are there plans to transition processes and/or products to the customer or client?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"9",
+		"text":"Will the deliverable(s) of the program or project utilize only a few different technologies (e.g., electrical, mechanical, digital)?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"10",
+		"text":"Will the deliverable(s) of the program or project have a manageable number of components, assemblies, and interconnected parts?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"11",
+		"text":"Does the program or project have clearly defined boundaries with other programs or projects and initiatives that may be running in parallel?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"12",
+		"text":"Is there consistency between what the customer communicates and what the customer actually needs?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"13",
+		"text":"Are the program or project team members based within the same region?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"14",
+		"text":"Is it feasible to obtain accurate program or project status reporting throughout the life of the project?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"15",
+		"text":"Is the program or project being coordinated within a single organization?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"16",
+		"text":"Will the program or project be conducted in a politically and environmentally stable country?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"17",
+		"text":"Will the program or project team members primarily work face-to-face (rather than virtually) throughout the program or project?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"18",
+		"text":"Is there open communication, collaboration, and trust among the stakeholders and the program or project team?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"19",
+		"text":"Will the program or project have an impact on a manageable number of stakeholders from different countries, backgrounds, languages, and cultures?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"20",
+		"text":"Does the organization have the right people, with the necessary skills and competencies, as well as the tools, techniques, or resources to support the program or project?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"21",
+		"text":"Is the senior management team fully committed to the program or project?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"22",
+		"text":"Will the program or project be conducted over a relatively short period of time, with a manageable number of stakeholder changes?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"23",
+		"text":"Does the program or project have the support, commitment, and priority from the organization and functional groups?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"24",
+		"text":"Is funding for the program or project being obtained from a single source or sponsor?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"25",
+		"text":"Have the success criteria for the program or project been defined, documented, and agreed upon by stakeholders?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"26",
+		"text":"For a multiorganizational-sponsored program or project, are all organizations aligned regarding project management processes, tools, and techniques?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"27",
+		"text":"Are there a manageable number of third-party program or project relationships?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"28",
+		"text":"Has this type of program or project ever been undertaken by the organization?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"29",
+		"text":"Are the actual rate and type or propensity for change manageable?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"30",
+		"text":"Does the program or project have a manageable number of issues, risks, and uncertainties?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"31",
+		"text":"31 Are the legal or regulatory requirements to which the program or project must comply manageable?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"32",
+		"text":"Will suppliers be able to meet commitments to the program or project?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"33",
+		"text":"Is there a high degree of confidence in the estimate to complete (ETC) for the program or project?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"34",
+		"text":"Have realistic expectations been set around the program or project success criteria?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"35",
+		"text":"Will the program or project deliver to the committed deadlines?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"36",
+		"text":"Is the client prepared to accept and sign off on the deliverables?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"37",
+		"text":"Are the program or project documents and files being kept current in an accessible location for the team (e.g., plan baseline, final plan, change authorizations, payments, correspondence, or contracts)?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"38",
+		"text":"Have all contracts related to the program or project been free of any claims filed by suppliers or customers?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"39",
+		"text":"Have all parts of the program or project been free from any financial penalties?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"40",
+		"text":"Is an agreed framework in place for financial tracking at a work package level?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"41",
+		"text":"Are the program or project metrics appropriate, stable, and reported regularly?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"42",
+		"text":"Is there a high level of confidence that new information generated from progressive elaboration is captured appropriately in the program or project plan?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"43",
+		"text":"Is there a high level of confidence that the interconnected components of the program or project will perform in a predictable manner?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"44",
+		"text":"Is it possible to terminate, suspend, or cancel a program or project activity when there is evidence that achievement of the desired outcome is not possible?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"45",
+		"text":"Are team members or stakeholders able to accept the program or project data or information that may be contrary to their beliefs, assumptions, or perspectives?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"46",
+		"text":"Is there an effective portfolio management process within the organization to facilitate strategic alignment and enable successful delivery of programs and projects?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"47",
+		"text":"Does the sponsor organization or project organization conduct its business (e.g., make decisions, determine strategies, set priorities, etc.) in a manner that promotes transparency and trust among its internal and external stakeholders?",
+		"noSelected":false
+		},
+		
+		{
+		"id":"48",
+		"text":"Are there a manageable number of critical paths in the program or project?",
+		"noSelected":false
 		}
+		
+		
 	]
 }
